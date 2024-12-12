@@ -14,6 +14,7 @@
 		0808D0345042810221C4C7B6 /* Pods-cicd24demoapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cicd24demoapp.release.xcconfig"; path = "Target Support Files/Pods-cicd24demoapp/Pods-cicd24demoapp.release.xcconfig"; sourceTree = "<group>"; };
 		26873203990CF9BA84342534 /* Pods_cicd24demoapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cicd24demoapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E990A612D0B06F300DEF7AF /* cicd24demoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cicd24demoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E990ACC2D0B0EB300DEF7AF /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		FE774E31E1C11258FB8024F3 /* Pods-cicd24demoapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cicd24demoapp.debug.xcconfig"; path = "Target Support Files/Pods-cicd24demoapp/Pods-cicd24demoapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,16 +57,15 @@
 				FE774E31E1C11258FB8024F3 /* Pods-cicd24demoapp.debug.xcconfig */,
 				0808D0345042810221C4C7B6 /* Pods-cicd24demoapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		8E990A582D0B06F300DEF7AF = {
 			isa = PBXGroup;
 			children = (
+				8E990AB92D0B0E4C00DEF7AF /* ci_scripts */,
 				8E990A632D0B06F300DEF7AF /* cicd24demoapp */,
 				8E990A622D0B06F300DEF7AF /* Products */,
-				5F5292CEDB6949C3E81D427D /* Pods */,
 				A7C48693F17779ED0B42DE3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -73,9 +73,18 @@
 		8E990A622D0B06F300DEF7AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				5F5292CEDB6949C3E81D427D /* Pods */,
 				8E990A612D0B06F300DEF7AF /* cicd24demoapp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8E990AB92D0B0E4C00DEF7AF /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				8E990ACC2D0B0EB300DEF7AF /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 		A7C48693F17779ED0B42DE3B /* Frameworks */ = {
